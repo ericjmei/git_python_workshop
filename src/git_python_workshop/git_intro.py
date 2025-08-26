@@ -88,6 +88,19 @@ def exponent(a: int, b: int):
     """
     return -1
 
+def mod(a: int, b: int):
+    """
+    Calculate the remainder when dividing `a` by `b`.
+
+    Args:
+        a (int): The dividend.
+        b (int): The divisor.
+
+    Returns:
+        int: The remainder after dividing `a` by `b`.
+    """
+    return -1
+
 if __name__ == "__main__":
 
     start_num = 1
