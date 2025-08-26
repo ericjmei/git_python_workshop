@@ -1,6 +1,6 @@
 def add(a: int, b: int):
     """
-    Add two integers.
+    Add two integers. James!
 
     Parameters
     ----------
@@ -18,7 +18,7 @@ def add(a: int, b: int):
 
 def subtract(a: int, b: int):
     """
-    Subtract one integer from another.
+    Subtract one integer from another. Iana!
 
     Parameters
     ----------
@@ -36,7 +36,7 @@ def subtract(a: int, b: int):
 
 def multiply(a: int, b: int):
     """
-    Multiply two integers.
+    Multiply two integers. Sydney!
 
     Parameters
     ----------
@@ -54,7 +54,7 @@ def multiply(a: int, b: int):
 
 def divide(a: int, b: int):
     """
-    Divide one integer by another.
+    Divide one integer by another. Alex!
 
     Parameters
     ----------
@@ -70,6 +70,24 @@ def divide(a: int, b: int):
     """
     return -1
 
+def exponent(a: int, b: int):
+    """
+    Raise one integer to the power of another. Eric!
+
+    Parameters
+    ----------
+    a : int
+        The base integer.
+    b : int
+        The exponent integer.
+
+    Returns
+    -------
+    int
+        The result of a raised to the power of b.
+    """
+    return -1
+
 if __name__ == "__main__":
 
     start_num = 1
@@ -78,5 +96,6 @@ if __name__ == "__main__":
     temp_num = subtract(temp_num, 1)
     temp_num = multiply(temp_num, 6)
     temp_num = divide(temp_num, 3)
+    temp_num = exponent(temp_num, 2)
 
     print(f"Final number: {temp_num}")
