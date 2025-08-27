@@ -105,10 +105,11 @@ if __name__ == "__main__":
 
     start_num = 1
 
-    temp_num = add(1, 2)
+    temp_num = add(start_num, 2)
     temp_num = subtract(temp_num, 1)
     temp_num = multiply(temp_num, 6)
     temp_num = divide(temp_num, 3)
     temp_num = exponent(temp_num, 2)
+    temp_num = mod(temp_num, 4)
 
     print(f"Final number: {temp_num}")
