@@ -40,7 +40,7 @@ docstring-code-format = true    # format fenced code blocks in docstrings
 docstring-code-line-length = 100
 
 # --- Docstrings ---
-[pydocstyle]
+[lint.pydocstyle]
 convention = "numpy"            # or "google" / "pep257"
 
 # --- Optional families you can toggle later ---
