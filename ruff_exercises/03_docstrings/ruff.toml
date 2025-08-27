@@ -1,0 +1,17 @@
+line-length = 100
+target-version = "py311"
+
+[lint]
+select = ["D"]   # enable only docstring rules
+
+ignore = [
+  "D100",  # Missing docstring in public module
+#  "D400",  # First line should end with a period
+#  "D205",  # 1 blank line required between summary and description
+#  "D401",  # First line should be in imperative mood
+#  "D403",  # First word of docstring should not be capitalized?
+#  "D417",  # Missing argument descriptions in docstring
+]
+
+[lint.pydocstyle]
+convention = "numpy"
