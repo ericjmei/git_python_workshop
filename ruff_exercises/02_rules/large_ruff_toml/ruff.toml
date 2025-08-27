@@ -1,0 +1,48 @@
+# ================================
+# Ruff: example project configuration
+# ================================
+
+# --- Global ---
+line-length = 100              # wrapping column for formatter + some lint hints
+target-version = "py311"       # affects certain fixes/modernizations
+
+# --- Linting ---
+[lint]
+# What to check:
+# F  : Pyflakes (real bugs: unused/undefined)
+# E/W: pycodestyle (readability basics)
+# I  : isort (import order/grouping)
+# B  : flake8-bugbear (common footguns)
+# D  : pydocstyle (docstrings; enable when team is ready)
+# ARG: unused arguments (flake8-unused-arguments)
+# N  : naming conventions (pep8-naming)
+select = ["F", "E", "W", "I", "B", "UP", "SIM", "ARG", "N"]
+
+# Suppress rules that commonly conflict with formatters or are too noisy.
+ignore = [
+  "E203",   # slice spacing; avoid conflict with formatter
+  "D100",   # missing module docstring 
+  "D104",   # missing package docstring 
+]
+
+# Allow auto-fixes on `ruff check --fix` (safe fixes only).
+fix = true
+
+# Per-file tuning:
+[lint.per-file-ignores]
+"tests/**" = ["D", "S"]   # don't force docstrings/security in tests
+
+# --- Formatting ---
+[format]
+quote-style = "double"          # "double" | "single" | "preserve"
+indent-style = "space"          # "space" | "tab"
+docstring-code-format = true    # format fenced code blocks in docstrings
+docstring-code-line-length = 100
+
+# --- Docstrings ---
+[pydocstyle]
+convention = "numpy"            # or "google" / "pep257"
+
+# --- Optional families you can toggle later ---
+# Add "C90" to `select` to enforce cyclomatic complexity
+# Add "ANN" to `select` to require/encourage type annotations

@@ -1,0 +1,13 @@
+line-length = 100
+
+[lint]
+select = ["B", "F", "ARG", "E", "SIM"]
+
+# comment out ONE
+ignore = [
+#    "B006", 
+#    "F821", 
+#    "ARG001", 
+#    "E501", 
+#    "SIM103"
+]
