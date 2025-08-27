@@ -14,7 +14,7 @@ def add(a: int, b: int):
     int
         The sum of a and b.
     """
-    return -1
+    return a + b
 
 def subtract(a: int, b: int):
     """
@@ -32,7 +32,7 @@ def subtract(a: int, b: int):
     int
         The difference between a and b.
     """
-    return -1
+    return a - b
 
 def multiply(a: int, b: int):
     """
@@ -50,7 +50,7 @@ def multiply(a: int, b: int):
     int
         The product of a and b.
     """
-    return -1
+    return a * b
 
 def divide(a: int, b: int):
     """
@@ -68,7 +68,7 @@ def divide(a: int, b: int):
     int
         The quotient of a divided by b.
     """
-    return -1
+    return a / b
 
 def exponent(a: int, b: int):
     """
@@ -86,7 +86,7 @@ def exponent(a: int, b: int):
     int
         The result of a raised to the power of b.
     """
-    return -1
+    return a ** b
 
 def mod(a: int, b: int):
     """
@@ -99,7 +99,7 @@ def mod(a: int, b: int):
     Returns:
         int: The remainder after dividing `a` by `b`.
     """
-    return -1
+    return a % b
 
 if __name__ == "__main__":
 
