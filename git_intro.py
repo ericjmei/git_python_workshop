@@ -104,7 +104,7 @@ def mod(a: float, b: float):
     float
         The remainder after dividing `a` by `b`.
     """
-    return -1
+    return a % b
 
 if __name__ == "__main__":
 
