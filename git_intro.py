@@ -52,52 +52,55 @@ def multiply(a: int, b: int):
     """
     return -1
 
-def divide(a: int, b: int):
+def divide(a: float, b: float) -> float:
     """
-    Divide one integer by another. Alex!
+    Divide one number by another. Alex!
 
     Parameters
     ----------
-    a : int
+    a : float
         The numerator.
-    b : int
+    b : float
         The denominator.
 
     Returns
     -------
-    int
+    float
         The quotient of a divided by b.
     """
     return -1
 
-def exponent(a: int, b: int):
+def exponent(a: float, b: float):
     """
-    Raise one integer to the power of another. Eric!
+    Raise one number to the power of another. Eric!
 
     Parameters
     ----------
-    a : int
-        The base integer.
-    b : int
-        The exponent integer.
+    a : float
+        The base number.
+    b : float
+        The exponent number.
 
     Returns
     -------
-    int
+    float
         The result of a raised to the power of b.
     """
     return -1
 
-def mod(a: int, b: int):
+def mod(a: float, b: float):
     """
     Calculate the remainder when dividing `a` by `b`.
 
     Args:
-        a (int): The dividend.
-        b (int): The divisor.
+        a : float
+            The dividend.
+        b : float
+            The divisor.
 
     Returns:
-        int: The remainder after dividing `a` by `b`.
+    float
+        The remainder after dividing `a` by `b`.
     """
     return -1
 
@@ -113,3 +116,4 @@ if __name__ == "__main__":
     temp_num = mod(temp_num, 4)
 
     print(f"Final number: {temp_num}")
+    print(f"Expected: 0.0")
