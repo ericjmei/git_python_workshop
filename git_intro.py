@@ -50,7 +50,7 @@ def multiply(a: int, b: int):
     int
         The product of a and b.
     """
-    return -1
+    return a * b
 
 def divide(a: float, b: float) -> float:
     """
