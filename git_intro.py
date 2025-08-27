@@ -14,7 +14,7 @@ def add(a: int, b: int):
     int
         The sum of a and b.
     """
-    return -1
+    return a + b
 
 def subtract(a: int, b: int):
     """
