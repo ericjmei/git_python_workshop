@@ -68,7 +68,9 @@ def divide(a: float, b: float) -> float:
     float
         The quotient of a divided by b.
     """
-    return -1
+    if b == 0:
+        raise ZeroDivisionError("Denominator 'b' cannot be zero.")
+    return a / b
 
 def exponent(a: float, b: float):
     """
