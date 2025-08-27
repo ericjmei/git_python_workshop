@@ -86,7 +86,7 @@ def exponent(a: float, b: float):
     float
         The result of a raised to the power of b.
     """
-    return -1
+    return a ** b
 
 def mod(a: float, b: float):
     """
