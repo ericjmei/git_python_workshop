@@ -16,7 +16,7 @@ def main():
     return result
 
 
-def compute(a, b):
+def compute(a, b, c=0):
     return a + b
 
 if __name__ == "__main__":
