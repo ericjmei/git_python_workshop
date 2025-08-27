@@ -32,7 +32,7 @@ def subtract(a: int, b: int):
     int
         The difference between a and b.
     """
-    return -1
+    return a - b
 
 def multiply(a: int, b: int):
     """
